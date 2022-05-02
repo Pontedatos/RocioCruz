@@ -24,3 +24,4 @@ La práctica consistió en la realización de un *notebook* en Jupyter con Pytho
 - [Análisis de los Presupuestos económicos (Ingresos 2018) en html](https://github.com/Pontedatos/RocioCruz/blob/15db9402f6eabbe4fc46f5224765551d16c40ba0/python-csv-ingresos-pandas.html)
 - [Conjunto de datos utilizados en formato CSV](https://github.com/Pontedatos/RocioCruz/blob/e67694da1a957393bc95c0b2fe6fca7215de8d54/practica-4.csv.csv)
 ## Documentación del proceso de creación de esta web: 
+En el siguiente documento [.md] se recoge el proceso de creación de este repositiorio y de la creación de la estructura web de este trabajo final.
