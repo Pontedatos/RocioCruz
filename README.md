@@ -8,7 +8,7 @@ En la práctica 1 se realizaron dos estudios a través de la visualización de d
 - [Comentario de TRESCA](https://github.com/Pontedatos/RocioCruz/blob/fbd56429d4826c691c5403235c88649b19e95b71/practica-1-tresca.md)
 ### Práctica 2:
 La práctica 2 consistía en que, tomando como base algún trabajo de periodismo de datos, visualización de datos o infografía, se realizara una historia basada en esa/s piezas como si fueran parte de vuestro propio proyecto. En dicha práctica cité tanto el trabajo en el que me base (un estudio sobre violencia machista) y enlace los gráficos que contenía el estudio. La sintaxis y el formato del documento también fue Markdown y subimos la práctica a nuestro repositorio personal de github. En esta segunda práctica vinculamos el repositorio por primera vez desde la terminal a través de las herramientas que comentaré en el resumen de lo aprendido en el curso. A continuación, se muestra el enlace directo a la práctica:
-- [El 57’3 % de mujeres residentes en España ha sufrido violencia machista a lo largo de su vida (https://github.com/Pontedatos/RocioCruz/blob/93c6a2fa1761c85633d3d3c49c924b9e3c7f7ad7/practica-2.md)
+- [El 57’3 % de mujeres residentes en España ha sufrido violencia machista a lo largo de su vida](https://github.com/Pontedatos/RocioCruz/blob/93c6a2fa1761c85633d3d3c49c924b9e3c7f7ad7/practica-2.md)
 - [Imagen 1 utilizada en formato JPG](https://github.com/Pontedatos/RocioCruz/blob/e67694da1a957393bc95c0b2fe6fca7215de8d54/violenciaedad.JPG)
 - [Imagen 2 utilizada en formato JPG](https://github.com/Pontedatos/RocioCruz/blob/e67694da1a957393bc95c0b2fe6fca7215de8d54/violenciapareja.JPG)
 ### Práctica 3: 
