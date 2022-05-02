@@ -25,3 +25,6 @@ La práctica consistió en la realización de un *notebook* en Jupyter con Pytho
 - [Conjunto de datos utilizados en formato CSV](https://github.com/Pontedatos/RocioCruz/blob/e67694da1a957393bc95c0b2fe6fca7215de8d54/practica-4.csv.csv)
 ## Documentación del proceso de creación de esta web: 
 En el siguiente documento `.md` se recoge el proceso de creación de este repositiorio y de la creación de la estructura web de este trabajo final.
+- [Metodología empleada para la creación de la web](https://github.com/Pontedatos/RocioCruz/blob/4f4182dcf00ccf064a156c796bf25746150b60f5/Metodolog%C3%ADa.md)
+## Proceso de aprendizaje de clase:
+A continuación se muestra un archivo .md en el que se recopilan las principales cuestiones aprendidas a lo largo de la asignatura.
