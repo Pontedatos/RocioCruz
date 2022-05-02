@@ -28,3 +28,4 @@ En el siguiente documento `.md` se recoge el proceso de creación de este reposi
 - [Metodología empleada para la creación de la web](https://github.com/Pontedatos/RocioCruz/blob/4f4182dcf00ccf064a156c796bf25746150b60f5/Metodolog%C3%ADa.md)
 ## Proceso de aprendizaje de clase:
 A continuación se muestra un archivo `.md` en el que se recopilan las principales cuestiones aprendidas a lo largo de la asignatura.
+- [Documentación del proceso de aprendizaje de la asignatura](https://github.com/Pontedatos/RocioCruz/blob/d707c00b4e13894e85aa2c4b87f93c561c616ec6/Resumen.md)
