@@ -1,2 +1,5 @@
-# Repositorio-rociocruz
-Este repositorio contiene las prácticas 1 (Tresca y libre), la práctica 2 y la práctica 3.
+#  Compilación de los trabajos realizados en la asignatura Periodismo de datos
+## Curso  2021 - 2022 Universidad Carlos III de Mad
+Este repositorio contiene los trabajos realizados por la alumna Rocío Cruz a lo largo de la asignatura Periodismo de datos. 
+### Práctica 1
+
