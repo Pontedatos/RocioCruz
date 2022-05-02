@@ -12,7 +12,7 @@ Una vez realizado este primer paso, seguí todos los pasos de creación de un re
 
 Una vez compiladas las prácticas en esta carpeta, he actualizado los cambios en GitHub. Para ello, he empleado varios comandos en el siguiente orden: 
 - `mi casa` para ir al lugar donde tengo el repositorio. 
-- `cd` para cambiar a la carpeta que tengo conectada con Github.
+- `cd` para cambiar el directorio a la carpeta conectada a Github.
 - `git status` para conocer los archivos que tengo en el ordenador, pero no en GitHub.
 -  `git add . `para añadir todos los elementos nuevos al repositorio. 
 -  Para darle un nombre a este cambio, he escrito `git commit -m`“cambio1”. 
