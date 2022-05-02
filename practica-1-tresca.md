@@ -1,0 +1,10 @@
+# Análisis del estudio de visualización de datos de Tresca
+A continuación, se va a analizar un estudio perteneciente al proyecto TRESCA Horizonte 2020: [“Are social media harmful? Yes, say most Europeans, but it’s complicated”](https://trescaproject.eu/2021/10/07/are-social-media-harmful-yes-say-most-europeans-but-its-complicated/). 
+Bajo mi punto de vista, la labor de Tresca, es decir, confiar en las comunicaciones visuales para empoderar e informar a las personas y de esta forma, poner fin a la desinformación y a las noticias falsas, es necesaria. También considero que las redes sociales están contribuyendo cada vez más a esta práctica de desinformación.
+
+A pesar de ello, en el presente artículo, echo en falta los recursos a los que se hace referencia en el contenido del mismo. Por ejemplo, me gustaría poder obtener con mayor facilidad los enlaces a los estudios de los que se habla. O visualizar los datos de la opinión de los encuestados a través de gráficos con los citados porcentajes para obtener un mayor contraste, evolución o comparación de los mismos.
+
+El gráfico que acompaña al artículo indica el porcentaje de la población de siete países de la Unión Europea que está dispuesta a verificar la información por sí misma (si se les da la oportunidad). Las barras del gráfico se muestran en color azul que hace contraste con el resto de la gráfica y permite observar de manera rápida y clara la tendencia de los diferentes países europeos en los que se ha realizado la encuesta. El título del gráfico y la correspondiente leyenda, también ayuda a comprender de qué nos está hablando dicha herramienta. 
+
+No obstante, mantengo el mismo punto de vista que expresa el proyecto Tresca al considerar relevante la manera en la que se facilitan y visualizan los datos a la población para que esta pueda emplearlos en obtener un mayor conocimiento y verificación. Así lo hemos podido comprobar durante la pandemia con la denominada *infodemia* a través de las redes sociales, especialmente en WhatsApp y Facebook donde se ha viralizado una gran cantidad de datos e informaciones falsas.
+
