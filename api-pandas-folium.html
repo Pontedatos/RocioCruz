@@ -13082,7 +13082,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Creaci&#243;n-de-un-mapa-de-Zaragoza-a-partir-de-un-archivo-cvs">Creaci&#243;n de un mapa de Zaragoza a partir de un archivo cvs<a class="anchor-link" href="#Creaci&#243;n-de-un-mapa-de-Zaragoza-a-partir-de-un-archivo-cvs">&#182;</a></h1><h2 id="Configuraci&#243;n-de-pandas-y-creaci&#243;n-de-variables">Configuraci&#243;n de pandas y creaci&#243;n de variables<a class="anchor-link" href="#Configuraci&#243;n-de-pandas-y-creaci&#243;n-de-variables">&#182;</a></h2><p>Para la elaboración del mapa de Zaragoza es necesario crear distintas varibles e importar librerías. En primer lugar, se definen las variables 'url_zrgz' y 'geo_zrgz':</p>
+<h1 id="Creaci&#243;n-de-un-mapa-de-Zaragoza-a-partir-de-un-archivo-cvs">Creaci&#243;n de un mapa de Zaragoza a partir de un archivo cvs<a class="anchor-link" href="#Creaci&#243;n-de-un-mapa-de-Zaragoza-a-partir-de-un-archivo-cvs">&#182;</a></h1><h2 id="Origen-de-los-datos">Origen de los datos<a class="anchor-link" href="#Origen-de-los-datos">&#182;</a></h2><p>En primer lugar, lo primero es establecer el origen de los datos que vamos a utilizar y definirlos en una variable. Por un lado, se genera la variable de los datos a través del enlace de datos abiertos del Ayuntamiento de Zaragoza que provee un archivo CSV con un registro de los accidentes viales.</p>
+<h3 id="Configuraci&#243;n-de-pandas-y-creaci&#243;n-de-variables">Configuraci&#243;n de pandas y creaci&#243;n de variables<a class="anchor-link" href="#Configuraci&#243;n-de-pandas-y-creaci&#243;n-de-variables">&#182;</a></h3><p>Para la elaboración del mapa de Zaragoza es necesario crear distintas varibles e importar librerías. En primer lugar, se definen las variables <code>url_zrgz</code> y <code>geo_zrgz</code>:</p>
 
 </div>
 </div>
@@ -13100,6 +13101,14 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Además, se definen las coordenadas geográficas de Zaragoza para, posteriormente, ser capaces de visualizar las dos variables juntas: los accidentes y el lugar en el que se produjeron.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
@@ -13116,15 +13125,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A continuación, se instala la libería folium. Esta librería permite crear mapas Leaflet:</p>
-
+<h2 id="Instalaci&#243;n-de-librer&#237;as:-Folium-y-Pandas">Instalaci&#243;n de librer&#237;as: Folium y Pandas<a class="anchor-link" href="#Instalaci&#243;n-de-librer&#237;as:-Folium-y-Pandas">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Una vez se ha realizado esto, se importan las liberías "folium" y "panda" y se redefine esta última como 'pd':</p>
+<p>En el caso de que no lo tengamos instalado, con <code>pip install folium</code> se instala la librería, sin olvidarnos de colocar el signo ! para señalar que se trata de un comando de la terminal.</p>
 
 </div>
 </div>
@@ -13173,6 +13181,14 @@ Successfully installed branca-0.4.2 folium-0.12.1.post1
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una vez se ha realizado esto, se importan las liberías "folium" y "panda" y se redefine esta última como <code>pd</code>:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
@@ -13190,7 +13206,14 @@ Successfully installed branca-0.4.2 folium-0.12.1.post1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se crea el mapa:</p>
+<h2 id="Creaci&#243;n-de-mapa">Creaci&#243;n de mapa<a class="anchor-link" href="#Creaci&#243;n-de-mapa">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Tras definir las variables e importar las librerías, se crea el mapa con la ubicación que se quiera, en este caso, la ubicación es la ciudad de Zaragoza. Esto se hace con <code>folium.Map()</code> y, entre los paréntesis, se indica la variable que contiene las coordenadas geográficas.</p>
 
 </div>
 </div>
@@ -13211,7 +13234,7 @@ Successfully installed branca-0.4.2 folium-0.12.1.post1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra el mapa:</p>
+<p>Se muestra el mapa. Esta librería usa <a href="https://www.openstreetmap.org/#map=6/40.007/-2.488">OpenStreetMap</a> para generar los mapas, un proyecto de código abierto alternativo a los de las grandes corporaciones (como Google o Apple), en el que son organizaciones y usuarios los que se encargan de su mantenimiento y actualización.</p>
 
 </div>
 </div>
@@ -13251,8 +13274,7 @@ Successfully installed branca-0.4.2 folium-0.12.1.post1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se crea un 'dataframe' de pandas llamado "df_zrgz" a partir de un archivo csv, cuyos datos están delimitados por ;</p>
-<p>A continuación, se muestra:</p>
+<p>Tras esto, se crea a partir de un archivo csv un DataFrame de Pandas llamado <code>df_zrgz</code>. Se indica que el delimitador de los datos en el CSV del Ayuntamiento de Zaragoza no es una coma (,), sino un punto y coma <code>(;)</code>. De esta forma, se evita que se visualicen y se analicen mal los datos al no separarse cada uno correctamente. A continuación, se muestra lo realizado:</p>
 
 </div>
 </div>
@@ -14384,7 +14406,7 @@ Successfully installed branca-0.4.2 folium-0.12.1.post1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra el nombre de las columnas de la tabla:</p>
+<p>Se muestra el nombre de las columnas de la tabla para familiarizarse con los datos presentes en esta base de datos, de cara a una futura visualización y análisis de los mismos:</p>
 
 </div>
 </div>
@@ -14429,8 +14451,8 @@ Successfully installed branca-0.4.2 folium-0.12.1.post1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra la información de la tabla como objeto de pandas:</p>
-<p>Expone información sobre el dataframe entre la que incluye el índice (RangeIndex) con el número de entradas, el número de columnas que hay (Data Columns), el nombre de las columnas (Colum), la cantidad de datos nulos que posee la tabla (Non-Null Count), el tipo de variable de las columnas (Dtype) y el tamaño (memory usage).</p>
+<p>Se muestra la información de la tabla como objeto de Pandas:</p>
+<p>Expone información sobre el DataFrame entre la que incluye el índice (RangeIndex) con el número de entradas, el número de columnas que hay (Data Columns), el nombre de las columnas (Colum), la cantidad de datos nulos que posee la tabla (Non-Null Count), el tipo de variable de las columnas (Dtype) y el tamaño (memory usage).</p>
 
 </div>
 </div>
@@ -14493,7 +14515,8 @@ memory usage: 6.5+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra la columna "Reason":</p>
+<p>Por ejemplo, se observan las razones que se han asignado a cada accidente: primero sin filtrar (es decir, viendo la tabla al completo con repetidos), y luego filtrando para que solo aparezca una vez cada razón. De estad forma se ven más claros los motivos que han sido asignados a los accidentes.</p>
+<p>Si se escribe entre corchetes <code>[]</code> el nombre de una o varias de las columnas (en este caso 'reason'), solo se muestran esos valores.</p>
 
 </div>
 </div>
@@ -14584,7 +14607,8 @@ Name: reason, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestran los valores que no se repiten de la columna "Reason":</p>
+<p>Se puede utilizar la función <code>.unique()</code> para saber cuáles son los tipos de valores de cada caso, es decir, se eliminan las repeticiones e, interpretandose los datos, se entiende que son las "categorías" que pueden darse, respectivamente, como valores en la columna "reason", "geometry" y "type" que especificamos usando <code>[]</code>.</p>
+<p>A continuación, se muestran los valores que no se repiten de la columna "reason".</p>
 
 </div>
 </div>
@@ -14680,7 +14704,7 @@ Name: reason, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra la columna "geometry":</p>
+<p>Y, finalmente, se muestra la columna "geometry":</p>
 
 </div>
 </div>

@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>python-api-covid-pandas</title>
+<title>python-api-covid19-pandas</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13089,8 +13089,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Base de datos de interés, como URL y en formato JSON
-<a href="http://api.covid19api.com/countries">http://api.covid19api.com/countries</a></p>
+<h2 id="Origen-de-los-datos">Origen de los datos<a class="anchor-link" href="#Origen-de-los-datos">&#182;</a></h2><p>En esta práctica, se va a usar la API <a href="https://api.covid19api.com/countries">COVID-19</a>, desarrollada por Kyle Redelinghuys y basada en <a href="https://github.com/CSSEGISandData/COVID-19">los datos</a> que proporciona la <a href="https://systems.jhu.edu/research/public-health/ncov/">Universidad Johns Hopkins</a>.</p>
 
 </div>
 </div>
@@ -13098,7 +13097,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Instalaci&#243;n-de-las-librer&#237;as-con-las-que-se-va-a-trabajar">Instalaci&#243;n de las librer&#237;as con las que se va a trabajar<a class="anchor-link" href="#Instalaci&#243;n-de-las-librer&#237;as-con-las-que-se-va-a-trabajar">&#182;</a></h2><p>Pandas es una librería estándar de python que se encarga del manejo de datos.</p>
+<h3 id="Instalaci&#243;n-de-las-librer&#237;as-con-las-que-se-va-a-trabajar">Instalaci&#243;n de las librer&#237;as con las que se va a trabajar<a class="anchor-link" href="#Instalaci&#243;n-de-las-librer&#237;as-con-las-que-se-va-a-trabajar">&#182;</a></h3><p>En primer lugar, es necesario instalar la librería para proyectar los datos que se obtengan sobre la incidencia de la COVID-19. Para ello, se emplea el comando <code>pip install pandas</code>. Pandas es una librería estándar de Python que se encarga del manejo de datos. Para especificar que lo que se está realizando es ejecutar un comando bash, se indica con el signo <code>!</code> al inicio de la línea.</p>
 
 </div>
 </div>
@@ -13106,7 +13105,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A continuación, se instala pandas con el siguiente comando:</p>
+<p>A continuación, se instala Pandas con el siguiente comando:</p>
 
 </div>
 </div>
@@ -13149,14 +13148,14 @@ Requirement already satisfied: six&gt;=1.5 in /usr/lib/python3/dist-packages (fr
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Configuraci&#243;n-de-Pandas">Configuraci&#243;n de Pandas<a class="anchor-link" href="#Configuraci&#243;n-de-Pandas">&#182;</a></h2>
+<h3 id="Configuraci&#243;n-de-Pandas">Configuraci&#243;n de Pandas<a class="anchor-link" href="#Configuraci&#243;n-de-Pandas">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se importa la librería pandas y se renombra como "pd" para emplearla en el resto del notebook.</p>
+<p>Tras este paso, se importa el proyecto. Para ello, se utiliza la función <code>import</code> y se importa la librería Pandas como <code>pd</code>, de forma abreviada, tal y como sigue a continuación.</p>
 
 </div>
 </div>
@@ -13177,14 +13176,14 @@ Requirement already satisfied: six&gt;=1.5 in /usr/lib/python3/dist-packages (fr
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Crear-variable">Crear variable<a class="anchor-link" href="#Crear-variable">&#182;</a></h2>
+<h3 id="Creaci&#243;n-de-la-variable">Creaci&#243;n de la variable<a class="anchor-link" href="#Creaci&#243;n-de-la-variable">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se crea una variable que contiene la base de datos que se va a utilizar:</p>
+<p>Ya se ha instalado la librería Pandas y se ha importado. Ahora se comienza con la creación de las variables necesarias para, posteriormente, realizar los gráficos con los datos de la API. Primero se define la variable <code>url</code>, que será la que le diga a Python el origen de los datos:</p>
 
 </div>
 </div>
@@ -13205,14 +13204,14 @@ Requirement already satisfied: six&gt;=1.5 in /usr/lib/python3/dist-packages (fr
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Crear-Dataframe">Crear Dataframe<a class="anchor-link" href="#Crear-Dataframe">&#182;</a></h2>
+<h3 id="Creaci&#243;n-de-DataFrame">Creaci&#243;n de DataFrame<a class="anchor-link" href="#Creaci&#243;n-de-DataFrame">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se crea una tabla de pandas leyendo el JSON de la base de datos:</p>
+<p>Cuando se tiene el enlace donde se encuentran los datos, los mostramos. Primero se crea un DataFrame (una tabla con filas y columnas en la que aparecerán los datos). Para ello, se utiliza la función de Pandas que lee el formato <code>.json</code>, en el que están los datos de la API: <code>pd.read_json(url)</code>. Al poner <code>(url)</code>, se le señala a Pandas cuáles son los datos que tiene que leer.</p>
 
 </div>
 </div>
@@ -13233,7 +13232,7 @@ Requirement already satisfied: six&gt;=1.5 in /usr/lib/python3/dist-packages (fr
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra la tabla:</p>
+<p>Se ejecuta el <code>df</code> para visualizar que todo está correcto:</p>
 
 </div>
 </div>
@@ -13366,14 +13365,15 @@ Requirement already satisfied: six&gt;=1.5 in /usr/lib/python3/dist-packages (fr
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Exploraci&#243;n-tabla">Exploraci&#243;n tabla<a class="anchor-link" href="#Exploraci&#243;n-tabla">&#182;</a></h2>
+<h3 id="Exploraci&#243;n-de-la-tabla">Exploraci&#243;n de la tabla<a class="anchor-link" href="#Exploraci&#243;n-de-la-tabla">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>De esta forma, se muestran las primeras entradas de la tabla (cabecera o head):</p>
+<p>Como se observa, al componerse de 248 filas, solo se muestra un extracto, las primeras y las últimas filas. A continuación, se sigue explorando la tabla.</p>
+<p>Por ejemplo, se van a visualizar las 6 primeras filas. Para ello, a través de <code>head</code>, se le dice que muestre el DataFrame con las X primeras filas, que en este caso se ha indicado que sean 6:</p>
 
 </div>
 </div>
@@ -13475,7 +13475,8 @@ Requirement already satisfied: six&gt;=1.5 in /usr/lib/python3/dist-packages (fr
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Por consiguiente, se muestran las últimas entradas de la tabla (tail); el 2 indica cuántas filas se exponen:</p>
+<p>Por consiguiente, sucede lo mismo pero al contrario, empezando por el final. Para decirle que se quiere comenzar por el final, en lugar de <code>head</code> se utiliza <code>tail</code>, con el mismo formato: entre paréntesis se señala el X número de filas que se quiere visualizar.</p>
+<p>Se muestran las últimas entradas de la tabla (tail); el 2 indica cuántas filas se exponen:</p>
 
 </div>
 </div>
@@ -13523,8 +13524,8 @@ memory usage: 5.9+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra la información de la tabla como objecto de pandas:</p>
-<p>Muestra información sobre el dataframe entre la que incluye el índice (RangeIndex) con el número de entradas, el número de columnas que hay (Data Columns), el nombre de las columnas (Colum), la cantidad de datos nulos que posee la tabla (Non-Null Count), el tipo de variable de las columnas (Dtype) y el tamaño (memory usage).</p>
+<p>Si se quieren conocer más datos técnicos acerca de la composición de lo que se está usando, se puede usar <code>info</code>. Esto indica información sobre el DataFrame entre la que incluye el índice (RangeIndex) con el número de entradas, el número de columnas que hay (Data Columns), el nombre de las columnas (Colum), la cantidad de datos nulos que posee la tabla (Non-Null Count), el tipo de variable de las columnas (Dtype) y el tamaño (memory usage).</p>
+<p>Se muestra la información de la tabla como objecto de Pandas:</p>
 
 </div>
 </div>
@@ -13602,7 +13603,8 @@ memory usage: 5.9+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra la columna "Country":</p>
+<p>Si se quiere filtrar por columnas para ver los datos de alguna en particular, se sigue utilizando <code>df</code> pero ahora, entre corchetes, se pone el nombre de la columna que se quiera visualizar. Por ejemplo, para ver una lista (abreviada) de países, se emplea 'Country'.</p>
+<p>A continuación, se muestra la columna 'Country':</p>
 
 </div>
 </div>
@@ -13654,7 +13656,8 @@ Name: Country, Length: 248, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra la columna "Country" y la fila número 66:</p>
+<p>Además de esto, también se pueden cruzar filas con columnas. Es decir, saber qué valor tiene la fila X en la columna Y. Para ello, se incluye otro corchete a los que se tiene especificando el número de la fila. En este caso, se quiere saber qué país está codificado en la fila número 66 de la tabla o DataFrame.</p>
+<p>Se muestra la columna 'Country' y la fila número 66:</p>
 
 </div>
 </div>
@@ -13695,7 +13698,9 @@ Name: Country, Length: 248, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tiempo-real">Tiempo real<a class="anchor-link" href="#Tiempo-real">&#182;</a></h2><p><a href="https://api.covid19api.com/country/spain/status/confirmed/live">https://api.covid19api.com/country/spain/status/confirmed/live</a></p>
+<h3 id="Tiempo-real">Tiempo real<a class="anchor-link" href="#Tiempo-real">&#182;</a></h3><p><a href="https://api.covid19api.com/country/spain/status/confirmed/live">https://api.covid19api.com/country/spain/status/confirmed/live</a></p>
+<p>Una vez se han testeado algunas formas de visualización del DataFrame de los países, se centra en algunos territorios concretos para ver su evolución en tiempo real de los casos confirmados.</p>
+<p>Para hacer esto, se tiene que definir de nuevo el enlace desde el que Pandas leerá los datos y crear, a partir de este, el DataFrame. En esta ocasión, se observarán los datos de España, por lo que se obtienen desde la API los casos confirmados en tiempo real para el país y se definen. Posteriormente, se muestran para ver que todo ha ido bien.</p>
 
 </div>
 </div>
@@ -13914,6 +13919,7 @@ Name: Country, Length: 248, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Al igual que se realizó anteriormente, se observan diferentes datos de la tabla. Para empezar, se listan las columnas existentes para saber qué datos contiene cada una. Esto se realiza mostrando el DataFrame de España y añadiendo <code>columns</code>.</p>
 <p>Se muestran los nombres de las columnas de la tabla:</p>
 
 </div>
@@ -13957,7 +13963,8 @@ Name: Country, Length: 248, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra la primera fila (1) por la cabecera (head) de la columna "Date" de la tabla:</p>
+<p>De la misma manera, se pueden cruzar filas con las columnas para saber un dato concreto. Por ejemplo, para saber cuál es el dato que se encuentra en la primera fila, empezando por el principio, se filtra por la columna <code>'Date'</code>, y con <code>.head(x)</code> se indica el número que se quiere ver.</p>
+<p>Se muestra la primera fila (1) por la cabecera (head) de la columna 'Date' de la tabla:</p>
 
 </div>
 </div>
@@ -13999,7 +14006,7 @@ Name: Date, dtype: datetime64[ns, UTC]</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra la primera fila (1) por el final de la tabla (tail) de la columna "Date" de la tabla:</p>
+<p>Se muestra la primera fila (1) por el final de la tabla (tail) de la columna 'Date' de la tabla:</p>
 
 </div>
 </div>
@@ -14041,7 +14048,7 @@ Name: Date, dtype: datetime64[ns, UTC]</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Expone información sobre el 'dataframe' entre la que incluye el índice (RangeIndex) con el número de entradas, el número de columnas que hay (Data Columns), el nombre de las columnas (Colum), la cantidad de datos nulos que posee la tabla (Non-Null Count), el tipo de variable de las columnas (Dtype) y el tamaño (memory usage).</p>
+<p>Se utiliza <code>info</code> para exponer información sobre el DataFrame entre la que incluye el índice (RangeIndex) con el número de entradas, el número de columnas que hay (Data Columns), el nombre de las columnas (Colum), la cantidad de datos nulos que posee la tabla (Non-Null Count), el tipo de variable de las columnas (Dtype) y el tamaño (memory usage).</p>
 
 </div>
 </div>
@@ -14096,6 +14103,7 @@ memory usage: 62.9+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Si se profundiza en cuestiones estadísticas, se pueden conocer, por ejemplo, datos como la media, la desviación estándar, los diferentes cuartiles y el valor mínimo y máximo. Para ello, se emplea <code>describe</code>.</p>
 <p>Muestra variables estadísticas de la tabla (de las columnas numéricas):</p>
 
 </div>
@@ -14210,7 +14218,7 @@ memory usage: 62.9+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra la tabla completa:</p>
+<p>A continuación se vuelve a mostrar el DataFrame completo, aunque aparece de forma abreviada por cuestión de espacio, sin filtrar por columna o tipo de datos.</p>
 
 </div>
 </div>
@@ -14427,7 +14435,8 @@ memory usage: 62.9+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se muestra la tabla según la columna "Date":</p>
+<p>Por consiguiente, se coloca como referencia la fecha de los datos, obteniéndose así una imagen general de la evolución de los datos. Para ello, se fija con <code>set_index</code> el nombre de la columna que se quiere colocar como referencia, en este caso es la fecha ('Date').</p>
+<p>Se muestra la tabla según la columna 'Date':</p>
 
 </div>
 </div>
@@ -14644,14 +14653,14 @@ memory usage: 62.9+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Creo que se está realizando esto, aunque no sé si lo he entendido bien: Se muestra la columna "Cases" una vez se ha indexado la tabla por "Date". Así, se muestra la columna "Cases" junto a su índice "Date":</p>
+<p>Para ceñirnos estrictamente a los datos que se quieren ver, y así dejar fuera los que son innecesarios, como el país, la latitud y la longitud o el código del país, entre corchetes se indican la(s) columna(s) que se quieren mostrar, además de la de la fecha.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_es</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Date&#39;</span><span class="p">)[</span><span class="s1">&#39;Cases&#39;</span><span class="p">]</span>
@@ -14667,7 +14676,7 @@ memory usage: 62.9+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -14680,12 +14689,12 @@ memory usage: 62.9+ KB
 2020-01-25 00:00:00+00:00           0
 2020-01-26 00:00:00+00:00           0
                                ...   
-2022-03-30 00:00:00+00:00    11508309
-2022-03-31 00:00:00+00:00    11508309
-2022-04-01 00:00:00+00:00    11551574
-2022-04-02 00:00:00+00:00    11551574
-2022-04-03 00:00:00+00:00    11551574
-Name: Cases, Length: 803, dtype: int64</pre>
+2022-04-16 00:00:00+00:00    11662214
+2022-04-17 00:00:00+00:00    11662214
+2022-04-18 00:00:00+00:00    11662214
+2022-04-19 00:00:00+00:00    11736893
+2022-04-20 00:00:00+00:00    11736893
+Name: Cases, Length: 820, dtype: int64</pre>
 </div>
 
 </div>
@@ -14697,7 +14706,7 @@ Name: Cases, Length: 803, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A través de "Plot" se crea el gráfico y mediante "Title" se da título al gráfico recién creado:</p>
+<h2 id="Representaci&#243;n-gr&#225;fica">Representaci&#243;n gr&#225;fica<a class="anchor-link" href="#Representaci&#243;n-gr&#225;fica">&#182;</a></h2><p>Manteniendo lo anterior, es decir, los datos que se quieren visualizar (fecha y número de casos, para ver la evolución temporal), se añade <code>plot</code> para crear el gráfico y mediante <code>title</code> se da un título al gráfico recién creado, dentro de los paréntesis a partir de plot.</p>
 
 </div>
 </div>
@@ -14753,14 +14762,14 @@ Name: Cases, Length: 803, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Otro-pa&#237;s">Otro pa&#237;s<a class="anchor-link" href="#Otro-pa&#237;s">&#182;</a></h2>
+<h3 id="Datos-de-Italia">Datos de Italia<a class="anchor-link" href="#Datos-de-Italia">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se da nombre a las variables (las definimos) y se muestra df_it.set_index('Date')['Cases'].plot()df_it.set_index('Date')['Cases'].plot(). Además, se crea el gráfico:</p>
+<p>Se repite el mismo proceso que se ha hecho hasta ahora, pero con otro país (Italia). Nos centramos solo en la representación visual de los datos:</p>
 
 </div>
 </div>
@@ -14818,7 +14827,8 @@ Name: Cases, Length: 803, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Comparaci&#243;n">Comparaci&#243;n<a class="anchor-link" href="#Comparaci&#243;n">&#182;</a></h2><p>Se comparan estos dos países en un solo gráfico:</p>
+<h2 id="Comparaci&#243;n-entre-pa&#237;ses">Comparaci&#243;n entre pa&#237;ses<a class="anchor-link" href="#Comparaci&#243;n-entre-pa&#237;ses">&#182;</a></h2><p>Una vez que se han visto diversos países por separados, es el momento de unir todos sus datos para poder compararlos y ver cómo han ido evolucionando sus casos confirmados de coronavirus a lo largo de un periodo temporal. Para ello, se crea una nueva variable por cada país que contenga solo los datos que se han ido necesitando y trabajando anteriormente: fecha y número de casos confirmados.</p>
+<p>Se comparan estos dos países en un solo gráfico:</p>
 
 </div>
 </div>
@@ -14967,7 +14977,7 @@ Name: Cases, Length: 803, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se crea el gráfico:</p>
+<p>Ahora, se da nombre a las columnas para organizar bien los datos y el gráfico. Una vez hecho esto, se muestra el gráfico con <code>plot</code> y se elige el tipo de gráfico, que en este caso, será de área.</p>
 
 </div>
 </div>
@@ -15024,7 +15034,7 @@ Name: Cases, Length: 803, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se guarda en un csv</p>
+<p>Se exporta la nueva variable a un archivo separado por comas <code>(.csv)</code>, con la función <code>to_csv</code>.</p>
 
 </div>
 </div>
@@ -15045,7 +15055,7 @@ Name: Cases, Length: 803, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se comprueba que el archivo se ha creado:</p>
+<p>Se comprueba que el archivo se ha guardado ejecutando el comando bash <code>ls</code>:</p>
 
 </div>
 </div>
@@ -15086,7 +15096,7 @@ esvit.csv		 seaborn-data
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se guarda el gráfico:</p>
+<p>Para guardar el gráfico como imagen PNG, tenemos que importar la librería <em>pyplot</em> de <em>matplotlib</em>, que ya se encuentra instalada. Se genera el gráfico de nuevo y con plt.savefig('nombre-grafico.png') se crea la imagen.</p>
 
 </div>
 </div>
