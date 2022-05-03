@@ -19,7 +19,7 @@ Una vez compiladas las prácticas en esta carpeta, he actualizado los cambios en
 -  Con `git pull` he actualizado de modo remoto el cambio. 
 -  Para acabar, he empleado el comando `git push` he subido los cambios que he realizado a GitHub (después de introducir mi usuario de GitHub y mi token).
 
-## Creación de una estructura para la página web
+## Creación de una estructura para la página web:
 Una vez comprobado en GitHub que los cambios se han hecho con éxito, me he introducido en la sección "Settings" del repositorio y he aprovechado la funcionalidad "Pages" de Github que permite la creación de una web con el contenido del repositorio. La estructura de la web es la del propio repositorio. Este repositorio, no contiene carpetas, todos los archivos están en el propio repositorio al mismo nivel.
 Para activar esta opción de Github he activado la opción "Pages" y he elegido la fuente en la rama "main" y en la carpeta "/root". Finalmente, el archivo README.md es el que GitHub emplea como index.html, es decir, lo que se ve al entrar en la página que se ha creado. Al solo verse el texto del README, es necesario enlazar el resto de prácticas para que estas puedan ser fácilmente accesibles. Para ello, he editado este README desde la terminal mediante nano empleando lenguaje markdown (una vez editado, se actualiza desde la terminal para que los cambios se vean reflejados en GitHub).
 
