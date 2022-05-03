@@ -13,6 +13,7 @@ La práctica 2 consistía en que, tomando como base algún trabajo de periodismo
 - [Imagen 2 utilizada en formato JPG](https://github.com/Pontedatos/RocioCruz/blob/e67694da1a957393bc95c0b2fe6fca7215de8d54/violenciapareja.JPG)
 ### Práctica 3: 
 En la práctica 3 fue la primera vez que trabajamos con Jupyter. La práctica consistió en completar y comentar los *notebooks* que creamos en Jupyter -los "notebooks" "barchart" y "api-pandas-folium"-, explicando los pasos que habíamos seguido y dejando claro cuáles no habíamos comprendido. Una vez hechos, se debían descargar los documentos en los formatos "ipynb" y "html" para posteriormente subirlos a nuestro repositorio de GitHub. A continuación, se muestran los enlaces a dichos documentos:
+- [Explicación de la práctica](https://github.com/ROCIOCRUZZ/Repositorio-rociocruz/blob/8ce2713907e97a3694fa8690df9e6a0184aaa354/practica-3/practica-3.md)
 - [API COVID 19 Pandas en ipynb](https://github.com/ROCIOCRUZZ/Repositorio-rociocruz/blob/8ce2713907e97a3694fa8690df9e6a0184aaa354/practica-3/python-api-covid19-pandas.ipynb)
 - [API COVID 19 Pandas en html](https://github.com/ROCIOCRUZZ/Repositorio-rociocruz/blob/8ce2713907e97a3694fa8690df9e6a0184aaa354/practica-3/python-api-covid19-pandas.html)
 - [API Pandas Folium en ipynb](https://github.com/ROCIOCRUZZ/Repositorio-rociocruz/blob/8ce2713907e97a3694fa8690df9e6a0184aaa354/practica-3/api-pandas-folium.ipynb)
