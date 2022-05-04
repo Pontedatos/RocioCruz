@@ -15,7 +15,7 @@ En primer lugar, la instalación de la terminal WSL la realicé a través de la 
 - Abrí una nueva sesión como administradora.
 - Ejecuté el comando `wsl --install -d Ubuntu`. Con el comando `(--install)` estaba indicando que quería instalar y con la distribución `(-d)` Ubuntu. 
 
-Cuando se instaló, realicé los siguientes pasos: 
+Cuando se instaló, hice lo siguiente: 
 - Reinicié el ordenador. 
 - Conduje mi puntero hacia el escritorio y busqué Ubuntu en “descargas” para poder ejecutarlo y desplazarlo al menú de Inicio de mi ordenador.
 Una vez ya instalado, introduje unos datos (Usuario y contraseña) para la creación de un usuario UNIX. Así evité acceder al sistema como “superusuario” (*root*). Finalmente, después de seguir todos estos pasos indicados por el profesor, obtuve con éxito la instalación nueva de Ubuntu a través de WSL.
