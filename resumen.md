@@ -1,4 +1,4 @@
-# Documentación del proceso de aprendizaje de clase: 
+# Documentación del proceso de aprendizaje: 
 A continuación, detallaré lo aprendido a lo largo del curso en la asignatura Periodismo de Datos.
 
 ## Instalación de un programa de emulación de la terminal:
