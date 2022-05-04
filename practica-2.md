@@ -1,6 +1,6 @@
 # El 57’3 % de mujeres residentes en España ha sufrido violencia machista a lo largo de su vida
 
-## Según datos de la Macroencuesta de Violencia contra la Mujer, elaborada por la Delegación del Gobierno para la Violencia de Género, el 32% de las mujeres residentes en España ha sufrido violencia por parte de alguna pareja (actual o pasada) a lo largo de su vida
+### Según datos de la Macroencuesta de Violencia contra la Mujer, elaborada por la Delegación del Gobierno para la Violencia de Género, el 32% de las mujeres residentes en España ha sufrido violencia por parte de alguna pareja (actual o pasada) a lo largo de su vida
 
 La Delegación del Gobierno para la Violencia de Género ha elaborado una Macroencuesta de Igualdad sobre violencia sexual donde figuran datos acerca de la prevalencia de violencia machista sufrida por las mujeres. Violencia machista entendida como “violencia física o sexual en el ámbito de la pareja o fuera de él, acoso sexual o acoso reiterado”.
 
