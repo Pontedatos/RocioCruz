@@ -26,7 +26,7 @@ La práctica consistió en la realización de un *notebook* en Jupyter con Pytho
 - [Explicación de la práctica](practica-4.md)
 - [Análisis de los Presupuestos económicos (Ingresos 2018) en ipynb](python-csv-ingresos-pandas.ipynb)
 - [Análisis de los Presupuestos económicos (Ingresos 2018) en html](python-csv-ingresos-pandas.html)
-- [Conjunto de datos utilizados en formato CSV](practica-4.csv.csv)
+- [Conjunto de datos utilizados en formato CSV](practica-4.csv)
 
 ## Documentación del proceso de creación de esta web: 
 En el siguiente documento `.md` se recoge el proceso de creación de este repositiorio y el de la creación de la estructura web de este trabajo final.
