@@ -78,7 +78,7 @@ Para configurar el programa de edición de texto en Cygwin:
 ## Configuración y funcionamiento de un gestor de paquetes/programas del emulador de la terminal: 
 Según [Debian.org](https://www.debian.org/doc/manuals/aptitude/pr01s02.es.html) un gestor de paquetes se considera “al gestor de conjuntos de ficheros que se agrupan y que puede instalar y eliminar como conjunto”. Principalmente para instalar programas y herramientas en sistemas Unix como GNU/Linux. En el caso de Ubuntu su gestor es `apt` y Cygwin tiene el suyo propio, `apt-cyg`, que no procede de fábrica con el programa, a diferencia del primero.
 
-Para instalar `apt-cyg` utilicé `lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg` y después `install apt-cyg /bin`.
+Para instalar `apt-cyg` utilicé `lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg` y, después, `install apt-cyg /bin`.
 
 ## Versión del lenguaje de SHELL utilizado:
 Según los apuntes tomados durante las clases, se denomina Shell al idioma de la terminal (dentro de este idioma se encuentra BASH y el CSH: Windows y Mac respectivamente). 
