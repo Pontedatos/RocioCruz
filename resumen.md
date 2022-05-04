@@ -51,7 +51,7 @@ Por otro lado, tuve que **modificar la "Home" en la terminal Cygwin**. Para ello
 
 Cómo realicé con la configuración anterior (la del alias), volví a cerrar y a abrir la terminal para comprobar que el cambio se había realizado correctamente. Para eso, utilicé el comando `pwd` y apareció `/cygdrive/c/Users/Rociocruz`.
 
-Por último, **configure mi usuario de Github en la terminal**. De esta forma, tenía la posibilidad de vincular los cambios que hiciera en mis archivos locales con mi repositorio en la nube (Github) cada vez que realizara una práctica. Seguí los siguientes pasos para hacerlo:
+Por último, **configuré mi usuario de Github en la terminal**. De esta forma, tenía la posibilidad de vincular los cambios que hiciera en mis archivos locales con mi repositorio en la nube (Github) cada vez que realizara una práctica. Seguí los siguientes pasos para hacerlo:
 - Abrí mi terminal y escribí el comando `git config --global user.name ROCIOCRUZZ`.
 - Después, escribí el comando `git config --global user.email correogithub`. En este caso, escribí el email con el que me dí de alta en la plataforma de Github. Como en mi caso, anteriormente había hecho algún * commit *, tuve que deshacerlo utilizando el comando `git commit --amend --reset-author`.
 Para configurar mi usuario y mi correo de Github, escribí `git config --global user.name ROCIOCRUZZ`, y luego `git config --global user.email correogithub`.
