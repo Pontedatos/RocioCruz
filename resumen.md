@@ -33,7 +33,7 @@ Una vez instalado, me dirigí a las “descargas” de mi ordenador y ejecuté e
 
 Finalmente, tras seguir estos pasos, el archivo me preguntó si quería instalar paquetes antes de terminar la instalación. Para instalar estos paquetes, dirigí mi puntero hacia la opción “Full” dentro de la pestaña “View”. A través del recuadro de búsqueda, instale los paquetes: `libcur14`, `wget`, `ca-certificates-letsencrypt`, `lynx`, `nano` y `openssl`. En cada paquete, bajo la columna “New” le dí a la flecha del paquete que quería instalar y seleccioné la última opción que me ofrecían. Con todo esto, terminé también con éxito la instalación de Cygwin.
 
-### Configuración del programa:
+## Configuración del programa:
 Lo primero que realicé tras finalizar las instalaciones anteriores, fue configurar los programas, tanto WSL primero, como Cygwin después. Los cambios que configuré fueron respecto a la "Home", al `git` o a algún alias. 
 
 Para **configurar el alias en la terminal** y así poder prescindir de escribir la ruta completa de mi carpeta de Periodismo de datos cada vez que me meta, configuré el comando `mi casa`. De esta forma, en lugar de escribir ‘/mnt/c/Users/rocio/Documentos/Escritorio/Universidad/5/PERIODISMODEDATOS/’ introducía el comando `mi casa` y me llevaba directamente al directorio que yo quería establecer como principal.
@@ -58,7 +58,7 @@ Para configurar mi usuario y mi correo de Github, escribí `git config --global 
 
 Con todo esto, conseguí vincular mi carpeta de la asignatura con Github. 
 
-### Configuración de un programa de edición de texto:
+## Configuración de un programa de edición de texto:
 En mi caso, el programa de edición de texto que tengo es `nano`. Por lo que la configuración la realicé en este editor. Lo primero que hice fue ajustar el texto a la resolución de la pantalla de mi ordenador. De esta manera, conseguía que apareciera el número de líneas para poder situar correctamente el contenido de mi archivo. Realicé los siguientes pasos:
 - Edite `nano` con el comando `nano $HOME/.nanorc`.
 - Escribí #Ajustar el texto a pantalla.
@@ -75,22 +75,22 @@ Para configurar el programa de edición de texto en Cygwin:
 - Busqué con CTRL + W softwrap, y en su línea escribí set softwrap.
 - Guardé con CTRL + O y cerré con CTRL + X.
 
-### Configuración y funcionamiento de un gestor de paquetes/programas del emulador de la terminal: 
+## Configuración y funcionamiento de un gestor de paquetes/programas del emulador de la terminal: 
 Según [Debian.org](https://www.debian.org/doc/manuals/aptitude/pr01s02.es.html) un gestor de paquetes se considera “al gestor de conjuntos de ficheros que se agrupan y que puede instalar y eliminar como conjunto”. Principalmente para instalar programas y herramientas en sistemas Unix como GNU/Linux. En el caso de Ubuntu su gestor es `apt` y Cygwin tiene el suyo propio, `apt-cyg`, que no procede de fábrica con el programa, a diferencia del primero.
 
 Para instalar `apt-cyg` utilicé `lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg` y después `install apt-cyg /bin`.
 
-### Versión del lenguaje de SHELL utilizado:
+## Versión del lenguaje de SHELL utilizado:
 Según los apuntes tomados durante las clases, se denomina Shell al idioma de la terminal (dentro de este idioma se encuentra BASH y el CSH: Windows y Mac respectivamente). 
 
 Para comprobar la versión del lenguaje Shell que he utilizado, utilicé la variable de entorno `$0` la cual consulto con `echo $0`. De esta forma, obtuve el lenguaje de la terminal que utilizo actualmente, Bash. Según mis apuntes, Bash es un lenguaje de programación en sí, pero también un entorno sobre el que trabajamos incluso sin programar. Es el lenguaje de la Shell más popular. Para comprobar la versión de Bash, lo hice a través del propio Bash, especificando la opción `--help`: `bash --help`.
 
-### Valor de la variable de entorno PATH:
+## Valor de la variable de entorno PATH:
 Sobre la variable de entorno PATH he aprendido que es la variable de entorno más importante para ejecutar comandos. Según mis apuntes, ruta (PATH) es el camino que hace el ordenador para “darte” lo que le has pedido. Por ejemplo, si yo quiero mis apuntes de periodismo de datos, el ordenador tiene que ir: Carpeta de apuntes 5º de carrera → Carpeta apuntes primer cuatri → Carpeta de periodismo de datos. La ruta puede estar dentro de tu ordenador o puede estar en Internet en general. 
 
 Las variables de entorno se generan con el símbolo `$`. Por ejemplo, `$HOME` significa la ruta de nuestro usuario (/mnt/c/Users/usuaria). `$PATH` nos muestra las rutas donde están los programas que se puedan ejecutar. Para consultar la variable de entorno `PATH`, usé el comando `echo $PATH`. La terminal nos devolverá las rutas en las que se encuentran los programas instalados que puede ejecutar la terminal. Separados por dos puntos `(:)`, aparecen los directorios donde la terminal va a buscar los programas para ejecutarlos cuando lo indiquemos así a través de los comandos.
 
-### Comandos utilizados y ejemplos:
+## Comandos utilizados y ejemplos:
 A continuación cito y explico los comandos que he aprendido y utilizado a lo largo del curso en clase: 
 
 - `pwd`: comando que he utilizado al abrir la terminal para saber dónde me encuentro.
