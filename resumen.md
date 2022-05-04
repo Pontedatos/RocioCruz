@@ -60,7 +60,7 @@ Con todo esto, conseguí vincular mi carpeta de la asignatura con Github.
 
 ## Configuración de un programa de edición de texto:
 En mi caso, el programa de edición de texto que tengo es `nano`. Por lo que la configuración la realicé en este editor. Lo primero que hice fue ajustar el texto a la resolución de la pantalla de mi ordenador. De esta manera, conseguía que apareciera el número de líneas para poder situar correctamente el contenido de mi archivo. Realicé los siguientes pasos:
-- Edite `nano` con el comando `nano $HOME/.nanorc`.
+- Edité `nano` con el comando `nano $HOME/.nanorc`.
 - Escribí #Ajustar el texto a pantalla.
 - Escribí `set softwrap`.
 - Escribí #Numerar las líneas.
