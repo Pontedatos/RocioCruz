@@ -30,7 +30,7 @@ La práctica consistió en la realización de un *notebook* en Jupyter con Pytho
 
 ## Documentación del proceso de creación de esta web: 
 En el siguiente documento `.md` se recoge el proceso de creación de este repositiorio y el de la creación de la estructura web de este trabajo final.
-- [Metodología empleada para la creación de la web](https://github.com/Pontedatos/RocioCruz/blob/9e4cf270c23b639aa2d5564b7e2e8bbc9fb83bf7/metodologia.md)
+- [Metodología empleada para la creación de la web](metodologia.md)
 
 ## Proceso de aprendizaje de clase:
 A continuación, se muestra un archivo `.md` en el que se recopilan las principales cuestiones aprendidas a lo largo de la asignatura.
