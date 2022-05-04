@@ -17,8 +17,7 @@ En primer lugar, la instalación de la terminal WSL la realicé a través de la 
 
 Cuando se instaló, hice lo siguiente: 
 - Reinicié el ordenador. 
-- Conduje mi puntero hacia el escritorio y busqué Ubuntu en “descargas” para poder ejecutarlo y desplazarlo al menú de Inicio de mi ordenador.
-Una vez ya instalado, introduje unos datos (Usuario y contraseña) para la creación de un usuario UNIX. Así evité acceder al sistema como “superusuario” (*root*). Finalmente, después de seguir todos estos pasos indicados por el profesor, obtuve con éxito la instalación nueva de Ubuntu a través de WSL.
+- Conduje mi puntero hacia el escritorio y busqué Ubuntu en “descargas” para poder ejecutarlo y desplazarlo al menú de Inicio de mi ordenador. Una vez ya instalado, introduje unos datos (Usuario y contraseña) para la creación de un usuario UNIX. Así evité acceder al sistema como “superusuario” (*root*). Finalmente, después de seguir todos estos pasos indicados por el profesor, obtuve con éxito la instalación nueva de Ubuntu a través de WSL.
 
 ### Terminal Cygwin 
 Otro día, el profesor nos recomendó la instalación de Cygwin, otra forma de ejecutar aplicaciones nativas de Linux en Windows. Este último, proporciona un comportamiento similar a los sistemas Unix en Microsoft Windows. A diferencia de WSL, no instalamos un sistema operativo, sino solo una terminal Unix dentro de nuestro sistema. De esta manera, volvíamos a tener una capa de emulación y una colección de herramientas que nos brindaban la apariencia y la sensación de Linux.
