@@ -16,17 +16,17 @@ La práctica 2 consistía en que, tomando como base algún trabajo de periodismo
 ### Práctica 3: 
 Por primera vez utilizamos Jupyter para realizar la práctica 3. Esta práctica consistió en completar y comentar los *notebooks* que creamos en Jupyter -los "notebooks" "barchart" y "api-pandas-folium"-, explicando los pasos que habíamos seguido y dejando claro cuáles no habíamos comprendido. Una vez realizados estos pasos, se debían descargar los documentos en los formatos "ipynb" y "html" para, posteriormente, subirlos a nuestro repositorio de GitHub. A continuación, se muestran los enlaces a dichos documentos:
 - [Explicación de la práctica](practica-3.md)
-- [API COVID 19 Pandas en ipynb](https://github.com/ROCIOCRUZZ/Repositorio-rociocruz/blob/8ce2713907e97a3694fa8690df9e6a0184aaa354/practica-3/python-api-covid19-pandas.ipynb)
-- [API COVID 19 Pandas en html](https://github.com/ROCIOCRUZZ/Repositorio-rociocruz/blob/8ce2713907e97a3694fa8690df9e6a0184aaa354/practica-3/python-api-covid19-pandas.html)
-- [API Pandas Folium en ipynb](https://github.com/ROCIOCRUZZ/Repositorio-rociocruz/blob/8ce2713907e97a3694fa8690df9e6a0184aaa354/practica-3/api-pandas-folium.ipynb)
-- [API Pandas Folium en html](https://github.com/ROCIOCRUZZ/Repositorio-rociocruz/blob/8ce2713907e97a3694fa8690df9e6a0184aaa354/practica-3/api-pandas-folium.html)
+- [API COVID 19 Pandas en ipynb](python-api-covid19-pandas.ipynb)
+- [API COVID 19 Pandas en html](python-api-covid19-pandas.html)
+- [API Pandas Folium en ipynb](api-pandas-folium.ipynb)
+- [API Pandas Folium en html](api-pandas-folium.html)
 
 ### Práctica 4:
 La práctica consistió en la realización de un *notebook* en Jupyter con Python donde se utilizasen los datos elegidos a nuestra elección, se documentase el proceso de análisis de datos que incluyera su visualización y se esbozase una historia con los mismos. También era necesario descargarlos en "ipynb" y "html" para, posteriormente, subirlos a nuestro repositorio de GitHub. En mi caso, me basé en un "Análisis de los Presupuestos económicos (Ingresos 2018) del Ayuntamiento de Alcobendas" obtenido en la página [datos.alcobendas.org](https://datos.alcobendas.org/dataset/f1b27265-9654-447f-baef-2f3619a59baa/resource/7ba7d14a-7f1b-4533-8492-2448ed7d923c). A continuación, se muestra el enlace directo a ambos documentos:
 - [Explicación de la práctica](practica-4.md)
-- [Análisis de los Presupuestos económicos (Ingresos 2018) en ipynb](https://github.com/Pontedatos/RocioCruz/blob/15db9402f6eabbe4fc46f5224765551d16c40ba0/python-csv-ingresos-pandas.ipynb)
-- [Análisis de los Presupuestos económicos (Ingresos 2018) en html](https://github.com/Pontedatos/RocioCruz/blob/15db9402f6eabbe4fc46f5224765551d16c40ba0/python-csv-ingresos-pandas.html)
-- [Conjunto de datos utilizados en formato CSV](https://github.com/Pontedatos/RocioCruz/blob/e67694da1a957393bc95c0b2fe6fca7215de8d54/practica-4.csv.csv)
+- [Análisis de los Presupuestos económicos (Ingresos 2018) en ipynb](python-csv-ingresos-pandas.ipynb)
+- [Análisis de los Presupuestos económicos (Ingresos 2018) en html](python-csv-ingresos-pandas.html)
+- [Conjunto de datos utilizados en formato CSV](practica-4.csv.csv)
 
 ## Documentación del proceso de creación de esta web: 
 En el siguiente documento `.md` se recoge el proceso de creación de este repositiorio y el de la creación de la estructura web de este trabajo final.
