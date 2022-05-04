@@ -36,7 +36,7 @@ Finalmente, tras seguir estos pasos, el archivo me preguntó si quería instalar
 ## Configuración del programa:
 Lo primero que realicé tras finalizar las instalaciones anteriores, fue configurar los programas, tanto WSL primero, como Cygwin después. Los cambios que configuré fueron respecto a la "Home", al `git` o a algún alias. 
 
-Para **configurar el alias en la terminal** y así poder prescindir de escribir la ruta completa de mi carpeta de Periodismo de datos cada vez que me meta, configuré el comando `mi casa`. De esta forma, en lugar de escribir ‘/mnt/c/Users/rocio/Documentos/Escritorio/Universidad/5/PERIODISMODEDATOS/’ introducía el comando `mi casa` y me llevaba directamente al directorio que yo quería establecer como principal.
+Para **configurar el alias en la terminal** y así poder prescindir de escribir la ruta completa de mi carpeta de Periodismo de datos cada vez que me meta, configuré el comando `mi casa`. De esta forma, en lugar de escribir ‘/mnt/c/Users/rocio/Documentos/Escritorio/Universidad/5/PERIODISMODEDATOS/’, introducía el comando `mi casa` y me llevaba directamente al directorio que yo quería establecer como principal.
 
 Sin embargo, para llegar a este paso, antes tuve que editar el archivo de configuración de Bash (un intérprete de comandos). Según [Emc2net](https://e-mc2.net/blog/bash-i-introduccion-y-ficheros-de-configuracion/#:~:text=Estos%20ficheros%20permiten%20al%20usuario,bash_profile%20%2C%20.), Bash “ha sido escrito por el Proyecto GNU y pertenece a la categoría de interfaz de usuarios en modo carácter o texto”. 
 
