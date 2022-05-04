@@ -34,4 +34,4 @@ En el siguiente documento `.md` se recoge el proceso de creación de este reposi
 
 ## Proceso de aprendizaje de clase:
 A continuación, se muestra un archivo `.md` en el que se recopilan las principales cuestiones aprendidas a lo largo de la asignatura.
-- [Documentación del proceso de aprendizaje de la asignatura](Resumen.md)
+- [Documentación del proceso de aprendizaje de la asignatura](resumen.md)
