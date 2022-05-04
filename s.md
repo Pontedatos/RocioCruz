@@ -36,10 +36,6 @@ Realicé una búsqueda en dicha lista, concretamente del dominio `.es` o de otro
 
 Finalmente, tras seguir estos pasos, el archivo me preguntó si quería instalar paquetes antes de terminar la instalación. Para instalar estos paquetes, dirigí mi puntero hacia la opción “Full” dentro de la pestaña “View”. A través del recuadro de búsqueda, instale los paquetes: `libcur14`, `wget`, `ca-certificates-letsencrypt`, `lynx`, `nano` y `openssl`. En cada paquete, bajo la columna “New” le dí a la flecha del paquete que quería instalar y seleccioné la última opción que me ofrecían. Con todo esto, terminé también con éxito la instalación de Cygwin.
 
-
-
-
-
 ### Configuración del programa:
 Lo primero que realicé tras finalizar las instalaciones anteriores, fue configurar los programas, tanto WSL primero, como Cygwin después. Los cambios que configuré fueron respecto a la home, al `git` o a algún alias. 
 
@@ -67,21 +63,21 @@ Para configurar mi usuario y mi correo de Github, escribí `git config --global 
 Con todo esto, conseguí vincular mi carpeta de la asignatura con Github. 
 
 ### Configuración de un programa de edición de texto:
-En mi caso, el programa de edición de texto que tengo es `nano`. Por lo que la configuración la realicé en este editor. Lo primero que hice fue ajustar el texto a la resolución de la pantalla de mi ordenador. De esta manera, conseguía que apareciera el número de líneas para poder situar correctamente el contenido de mi archivo. Realicé los siguientes pasos:
-Edite nano con el comando `nano $HOME/.nanorc`.
-Escribí #Ajustar el texto a pantalla.
-Escribí `set softwrap`.
-Escribí #Numerar las líneas.
-Escribí `set linenumbers`. 
+En mi caso, el programa de edición de texto que tengo es `nano`. Por lo que la configuración la realicé en este editor. Lo primero que hice fue ajustar el texto a la resolución de la pantalla de mi ordenador. De esta manera, conseguía que apareciera el número de líneas para poder situar correctamente el contenido de mi archivo. - -- Realicé los siguientes pasos:
+- Edite nano con el comando `nano $HOME/.nanorc`.
+- Escribí #Ajustar el texto a pantalla.
+- Escribí `set softwrap`.
+- Escribí #Numerar las líneas.
+- Escribí `set linenumbers`. 
 Con todos estos pasos, conseguí ajustar el texto correctamente. 
 
 Para configurar el programa de edición de texto en Cygwin:
-Copie el archivo de configuración de `nano` que se encuentra en el directorio `/etc`.
-Copie este archivo en mi directorio home con `cp /etc/nanorc .nanorc`.
-Edite el archivo con `nano .nanorc`. 
-Busqué con CTRL + W linenumbers, y en su línea, escribí set linenumbers.
-Busqué con CTRL + W softwrap, y en su línea escribí set softwrap.
-Guardé con CTRL + O y cerré con CTRL + X.
+- Copie el archivo de configuración de `nano` que se encuentra en el directorio `/etc`.
+- Copie este archivo en mi directorio home con `cp /etc/nanorc .nanorc`.
+- Edite el archivo con `nano .nanorc`. 
+- Busqué con CTRL + W linenumbers, y en su línea, escribí set linenumbers.
+- Busqué con CTRL + W softwrap, y en su línea escribí set softwrap.
+- Guardé con CTRL + O y cerré con CTRL + X.
 
 ### Configuración y funcionamiento de un gestor de paquetes/programas del emulador de la terminal: 
 
@@ -103,32 +99,32 @@ Las variables de entorno se generan con el símbolo $. Por ejemplo, $HOME signif
 
 A continuación cito y explico los comandos que he aprendido y utilizado a lo largo del curso en clase: 
 
-`pwd`: comando que he utilizado al abrir la terminal para saber dónde me encuentro.
-`cd`: comando que he utilizado para cambiar el directorio (con `cd` y un espacio, te lleva a home).
-`ls`: comando que he utilizado para listar. Por ejemplo, qué tengo en una carpeta. Ejemplo: ls -l significa lístame con más detalle. 
-`nano`: comando que he utilizado para editar archivos .md de texto.
-`mkdir`: comando que he utilizado para crear carpetas.
-`&&`: comando que he utilizado para unir comandos, es decir, hacer dos comandos de una vez. Ejemplo: mkdir (crear carpeta) && cd (cambiar de directorio).
-`push`: comando que he utilizado para realizar descargas.
-`mnt`: comando que he utilizado para relacionar el programa (wsl, la terminal) con Windows. 
-`cat`: comando que he utilizado para concatenar (unir o enlazar) cosas y para leer archivos (o para previsualizar). Por ejemplo, pongo cat README.md para previsualizar mi archivo readme.
-`mv`: comando que he utilizado para mover las cosas de un sitio a otro. También lo he empleado para cambiar de nombre un archivo o carpeta. Ejemplos: mv capeta/ nuevo destino/. (“nuevo destino” es donde muevo “carpeta”). mv carpeta/ carpetita para cambiar de nombre. mv [origen] [destino] para mover (cortar) las carpetas o archivos de sitio, pero también para renombrarlos. 
-`echo`: comando que he utilizado para que la terminal responda a lo que escribo. Por ejemplo, echo “hola mundo”.
-`echo $HOME`: comando que he utilizado para que la terminal me diga cual es mi home. 
-`cp`: comando que he utilizado para copiar un archivo o carpeta a otra. Por ejemplo, cp nombre de la carpeta/nombre del archivo.md  carpeta a donde lo quieres mover/.
-`../`: comando que he utilizado para ir al repositorio anterior.
-`git init`: comando que he utilizado para que una carpeta tenga las mismas “propiedades” que una carpeta de github. 
-`touch`: comando que he utilizado para crear un archivo en blanco.
-`rm`: comando que he utilizado para borrar.
-`whoami`: comando que he utilizado para que me diga quién soy.
-`git clone`: comando que he utilizado para clonar en la carpeta.
-`man`: comando que he utilizado para mostrar información sobre el comando que queramos.
-`env`: comando que he utilizado para que me muestre las variables de entorno. 
-`grep`: comando que he utilizado para  buscar palabras dentro de archivos de texto desde la terminal.
-`wget`: comando que he utilizado para descargar un archivo/contenido de una web. 
-`cat.bash_history`: comando que he utilizado para ver el historial de comandos. 
-`git status`: comando que he utilizado para conocer los archivos que tengo en el ordenador, pero no en GitHub.
-`git add .`: comando que he utilizado para añadir todos los elementos nuevos al repositorio.
-`git commit -m`: comando que he utilizado para darle un nombre al cambio.
-`git pull`: comando que he utilizado para actualizar de modo remoto el cambio.
-`git push`: comando que he utilizado para subir los cambios realizados a Github.
+- `pwd`: comando que he utilizado al abrir la terminal para saber dónde me encuentro.
+- `cd`: comando que he utilizado para cambiar el directorio (con `cd` y un espacio, te lleva a home).
+- `ls`: comando que he utilizado para listar. Por ejemplo, qué tengo en una carpeta. Ejemplo: ls -l significa lístame con más detalle. 
+- `nano`: comando que he utilizado para editar archivos .md de texto.
+- `mkdir`: comando que he utilizado para crear carpetas.
+- `&&`: comando que he utilizado para unir comandos, es decir, hacer dos comandos de una vez. Ejemplo: mkdir (crear carpeta) && cd (cambiar de directorio).
+- `push`: comando que he utilizado para realizar descargas.
+- `mnt`: comando que he utilizado para relacionar el programa (wsl, la terminal) con Windows. 
+- `cat`: comando que he utilizado para concatenar (unir o enlazar) cosas y para leer archivos (o para previsualizar). Por ejemplo, pongo cat README.md para previsualizar mi archivo readme.
+- `mv`: comando que he utilizado para mover las cosas de un sitio a otro. También lo he empleado para cambiar de nombre un archivo o carpeta. Ejemplos: mv capeta/ nuevo destino/. (“nuevo destino” es donde muevo “carpeta”). mv carpeta/ carpetita para cambiar de nombre. mv [origen] [destino] para mover (cortar) las carpetas o archivos de sitio, pero también para renombrarlos. 
+- `echo`: comando que he utilizado para que la terminal responda a lo que escribo. Por ejemplo, echo “hola mundo”.
+- `echo $HOME`: comando que he utilizado para que la terminal me diga cual es mi home. 
+- `cp`: comando que he utilizado para copiar un archivo o carpeta a otra. Por ejemplo, cp nombre de la carpeta/nombre del archivo.md  carpeta a donde lo quieres mover/.
+- `../`: comando que he utilizado para ir al repositorio anterior.
+- `git init`: comando que he utilizado para que una carpeta tenga las mismas “propiedades” que una carpeta de github. 
+- `touch`: comando que he utilizado para crear un archivo en blanco.
+- `rm`: comando que he utilizado para borrar.
+- `whoami`: comando que he utilizado para que me diga quién soy.
+- `git clone`: comando que he utilizado para clonar en la carpeta.
+- `man`: comando que he utilizado para mostrar información sobre el comando que queramos.
+- `env`: comando que he utilizado para que me muestre las variables de entorno. 
+- `grep`: comando que he utilizado para  buscar palabras dentro de archivos de texto desde la terminal.
+-  `wget`: comando que he utilizado para descargar un archivo/contenido de una web. 
+- `cat.bash_history`: comando que he utilizado para ver el historial de comandos. 
+- `git status`: comando que he utilizado para conocer los archivos que tengo en el ordenador, pero no en GitHub.
+- `git add .`: comando que he utilizado para añadir todos los elementos nuevos al repositorio.
+- `git commit -m`: comando que he utilizado para darle un nombre al cambio.
+- `git pull`: comando que he utilizado para actualizar de modo remoto el cambio.
+- `git push`: comando que he utilizado para subir los cambios realizados a Github.
