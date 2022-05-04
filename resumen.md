@@ -14,6 +14,7 @@ En mi caso la virtualización de la distribución de Linux fue Ubuntu. Esta últ
 En primer lugar, la instalación de la terminal WSL la realicé a través de la PowerShell de Windows. Según [Microsoft Build](https://docs.microsoft.com/es-es/powershell/scripting/overview?view=powershell-7.2), PowerShell es “una solución de automatización de tareas multiplataforma formada por un shell de línea de comandos, un lenguaje de scripting y un marco de administración de configuración”. Los pasos que seguí para su instalación fueron:
 - Abrí una nueva sesión como administradora.
 - Ejecuté el comando `wsl --install -d Ubuntu`. Con el comando `(--install)` estaba indicando que quería instalar y con la distribución `(-d)` Ubuntu. 
+
 Cuando se instaló, realicé los siguientes pasos: 
 - Reinicié el ordenador. 
 - Conduje mi puntero hacia el escritorio y busqué Ubuntu en “descargas” para poder ejecutarlo y desplazarlo al menú de Inicio de mi ordenador.
