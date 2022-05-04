@@ -44,7 +44,7 @@ Esto quiere decir, situarse en el directorio “casa” de mi usuario a través 
 
 Después de esto, finalicé la sesión de mi terminal a través del comando `exit`. Para comprobar si los cambios realizados eran correctos, volví a abrir la sesión en mi terminal, pero esta vez escribiendo el comando configurado `micasa`. Realicé con éxito la configuración. Para ver el archivo de configuración utilicé el comando `cat $HOME/.bashrc`. Para editar el archivo, el comando `nano $HOME/.bashrc`. 
 
-Por otro lado, tuve que modificar la "Home" en la terminal Cygwin. Para ello, cambié la ruta de “casa” de mi usuario para que fuera la de Windows. Para conseguir esto tuve que realizar varios pasos:
+Por otro lado, tuve que **modificar la "Home" en la terminal Cygwin**. Para ello, cambié la ruta de “casa” de mi usuario para que fuera la de Windows. Para conseguir esto tuve que realizar varios pasos:
 - Editar el archivo `nsswith.conf` con el intérprete de comandos `nano`: `nano /etc/nsswith.conf`. 
 - Al final del archivo escribí `db_home: windows`.
 - Guardé en `nano` mediante las teclas CTRL + O y cerré con las teclas CTRL + X. 
