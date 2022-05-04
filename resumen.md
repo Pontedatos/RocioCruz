@@ -95,16 +95,16 @@ A continuación cito y explico los comandos que he aprendido y utilizado a lo la
 
 - `pwd`: comando que he utilizado al abrir la terminal para saber dónde me encuentro.
 - `cd`: comando que he utilizado para cambiar el directorio (con `cd` y un espacio, te lleva a home).
-- `ls`: comando que he utilizado para listar. Por ejemplo, qué tengo en una carpeta. Ejemplo: ls -l significa lístame con más detalle. 
+- `ls`: comando que he utilizado para listar. Por ejemplo, qué tengo en una carpeta. Ejemplo: `ls -l` significa lístame con más detalle. 
 - `nano`: comando que he utilizado para editar archivos .md de texto.
 - `mkdir`: comando que he utilizado para crear carpetas.
-- `&&`: comando que he utilizado para unir comandos, es decir, hacer dos comandos de una vez. Ejemplo: mkdir (crear carpeta) && cd (cambiar de directorio).
+- `&&`: comando que he utilizado para unir comandos, es decir, hacer dos comandos de una vez. Ejemplo: `mkdir` (crear carpeta) && cd (cambiar de directorio).
 - `push`: comando que he utilizado para realizar descargas.
 - `mnt`: comando que he utilizado para relacionar el programa (wsl, la terminal) con Windows. 
 - `cat`: comando que he utilizado para concatenar (unir o enlazar) cosas y para leer archivos (o para previsualizar). Por ejemplo, pongo cat README.md para previsualizar mi archivo readme.
 - `mv`: comando que he utilizado para mover las cosas de un sitio a otro. También lo he empleado para cambiar de nombre un archivo o carpeta. Ejemplos: mv capeta/ nuevo destino/. (“nuevo destino” es donde muevo “carpeta”). mv carpeta/ carpetita para cambiar de nombre. mv [origen] [destino] para mover (cortar) las carpetas o archivos de sitio, pero también para renombrarlos. 
 - `echo`: comando que he utilizado para que la terminal responda a lo que escribo. Por ejemplo, echo “hola mundo”.
-- `echo $HOME`: comando que he utilizado para que la terminal me diga cual es mi home. 
+- `echo $HOME`: comando que he utilizado para que la terminal me diga cual es mi "Home". 
 - `cp`: comando que he utilizado para copiar un archivo o carpeta a otra. Por ejemplo, cp nombre de la carpeta/nombre del archivo.md  carpeta a donde lo quieres mover/.
 - `../`: comando que he utilizado para ir al repositorio anterior.
 - `git init`: comando que he utilizado para que una carpeta tenga las mismas “propiedades” que una carpeta de github. 
